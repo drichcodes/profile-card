@@ -1,0 +1,11 @@
+@charset "UTF-8";
+root {
+    /*** Primary Colors ***/
+    --clr-bg-900: hsl(185, 75%, 39%);
+    --clr-bg-600: hsl(229, 23%, 23%);
+    --clr-bg-700: hsl(227, 10%, 46%);
+
+    /*** Font Family & Colors ***/
+    --clr-text-color: hsl(0, 0%, 59%);
+    --ff-main-font: 'Kumbh Sans', sans-serif;
+}
