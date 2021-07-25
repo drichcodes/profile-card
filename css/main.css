@@ -1,11 +1,54 @@
 @charset "UTF-8";
 root {
-    /*** Primary Colors ***/
-    --clr-bg-900: hsl(185, 75%, 39%);
-    --clr-bg-600: hsl(229, 23%, 23%);
-    --clr-bg-700: hsl(227, 10%, 46%);
+    --clr-bg-main: hsl(185, 75%, 39%,), blue;
+    --clr-text-accent: hsl(229, 23%, 23%);
+    --clr-stats-line: hsl(227, 10%, 46%);
 
-    /*** Font Family & Colors ***/
     --clr-text-color: hsl(0, 0%, 59%);
-    --ff-main-font: 'Kumbh Sans', sans-serif;
+    --ff-main-font: 'Kumbh Sans';
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: var(--ff-main-font);
+    color: var(--clr-bg-main);
+}
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    width: 80%;
+}
+
+#bubbles {
+    background: url(../img/victor.jpg), url(../img/bubbles.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom, left top;
+    
+    width: 287.2px;
+    height: 150px;
+}
+
+#info {
+    text-align: center;
+}
+
+#stats {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0;
 }
